@@ -1,0 +1,10 @@
+<apex:page controller="MyContactsController" rendered="true">
+  <!-- Begin Default Content REMOVE THIS -->
+  <h1>Displays Contacts using Custom Controller</h1>
+  <apex:dataTable value="{!myContacts}" var="contact">
+      <apex.outputText value="{!contact.Name}" />
+      <apex.outputText value="{!contact.Account.Name}" />
+  </apex:dataTable>
+  Displays Contacts using Custom Controller ONCE AGAIN
+  <apex:outputText value="{!msg}"></apex:outputText>
+</apex:page>
